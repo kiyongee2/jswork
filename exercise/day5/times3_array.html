@@ -30,12 +30,11 @@
       }
       console.log(numbers);
       
-      let numbers2 = numbers.map(myFunction);
+      //let numbers2 = numbers.map(myFunction);
+      let numbers2 = numbers.map(function(x){
+        return x});
       document.getElementById("show").innerHTML = numbers2;
 
-      function myFunction(x){
-        return x;
-      }
       document.write("<br>"+ n + "까지 3의 배수의 개수: " + count);
     }   
   </script>
