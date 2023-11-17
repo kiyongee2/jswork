@@ -8,11 +8,10 @@ function myWatch(){
 
   let watch = document.getElementById("show")
   //watch.innerHTML = time;
-  if(time >= 0 && time <= 12){
+  if(now.getHours() <= 12){
     watch.innerHTML = time.replace("오전", "am");
   }else{
     watch.innerHTML = time.replace("오후", "pm");
   }
-  
   watch.style.color = "blue";
 }
